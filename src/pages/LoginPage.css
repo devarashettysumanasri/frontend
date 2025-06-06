@@ -71,7 +71,7 @@
 .input-group input:focus {
   border-color: #4364F7; /* A bright, primary blue */
   outline: none;
-  box-shadow: 0 0 8px rgba(67, 100, 247, 0.4);
+  box-shadow: 0 0 8px rgba(40, 75, 233, 0.4);
 }
 
 /* The main login button */
