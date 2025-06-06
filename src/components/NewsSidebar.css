@@ -1,0 +1,41 @@
+.news-sidebar-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.news-header h4 {
+    margin: 0;
+    color: #333;
+}
+
+.news-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.news-list li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.news-list h5 {
+    margin: 0 0 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.news-list span {
+    font-size: 0.8rem;
+    color: #666;
+}

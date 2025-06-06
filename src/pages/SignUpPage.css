@@ -1,0 +1,134 @@
+/* Using a nice Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Main container for the entire page */
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #6FB1FC, #4364F7, #0052D4);
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/* The white box that holds the form */
+.signup-container {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Form title and subtitle */
+.signup-form h2 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.subtitle {
+  color: #667;
+  margin-bottom: 2rem;
+}
+
+/* Grouping for labels and inputs */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.input-group input:focus {
+  border-color: #4364F7;
+  outline: none;
+  box-shadow: 0 0 8px rgba(67, 100, 247, 0.4);
+}
+
+/* --- NEW STYLES for Password Criteria Tags --- */
+.password-criteria {
+  display: flex;
+  flex-wrap: wrap; /* Allows tags to wrap to the next line on small screens */
+  gap: 0.5rem; /* Space between tags */
+  margin-top: -0.5rem; /* Pull it closer to the password input */
+  margin-bottom: 1.5rem;
+}
+
+.criterion {
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px; /* Pill shape */
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem; /* Space between icon and text */
+}
+
+/* Style for an invalid/unmet criterion */
+.criterion.invalid {
+  background-color: #f8f9fa; /* Light grey background */
+  color: #6c757d; /* Muted grey text */
+  border: 1px solid #dee2e6;
+}
+
+/* Style for a valid/met criterion */
+.criterion.valid {
+  background-color: #e9f7ec; /* Light green background */
+  color: #28a745; /* Darker green text */
+  border: 1px solid #28a745;
+}
+
+/* The main sign-up button */
+.signup-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0052D4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.signup-button:hover {
+  background-color: #0041a8;
+  transform: translateY(-2px);
+}
+
+/* Style for the button when it's disabled */
+.signup-button:disabled {
+  background-color: #a0c3ff;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* "Already have an account?" link */
+.extra-links {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+.extra-links a {
+  color: #0052D4;
+  text-decoration: none;
+}
+.extra-links a:hover {
+  text-decoration: underline;
+}

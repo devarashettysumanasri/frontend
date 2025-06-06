@@ -1,0 +1,38 @@
+.home-page-container {
+    background-color: #f3f2ef; /* LinkedIn's light grey background */
+    min-height: 100vh;
+}
+
+/* This is the core of the LinkedIn layout */
+.home-layout {
+    display: grid;
+    /* Defines three columns: Left, Center, Right */
+    grid-template-columns: 250px 1fr 300px;
+    gap: 1.5rem; /* Space between columns */
+    max-width: 1200px;
+    margin: 1.5rem auto; /* Center the layout on the page */
+    padding: 0 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .home-layout {
+        grid-template-columns: 250px 1fr; /* Right sidebar disappears */
+    }
+
+    /* Select the third child (NewsSidebar) and hide it */
+    .home-layout > :nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-layout {
+        grid-template-columns: 1fr; /* A single column layout */
+    }
+    
+    /* Left sidebar disappears */
+     .home-layout > :nth-child(1) {
+        display: none;
+    }
+}

@@ -1,0 +1,118 @@
+/* Using a nice Google Font for a modern look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Main container for the entire page, centered with a gradient background */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* The white box that holds the form */
+.login-container {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Form title */
+.login-form h2 {
+  color: #003366; /* A deep, professional blue */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* Subtitle under the main heading */
+.subtitle {
+  color: #667;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Grouping for labels and inputs */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Styling for the input fields */
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight effect on input focus */
+.input-group input:focus {
+  border-color: #4364F7; /* A bright, primary blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(67, 100, 247, 0.4);
+}
+
+/* The main login button */
+.login-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #0052D4; /* A strong, primary blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0041a8; /* A slightly darker shade for hover */
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+}
+
+/* Links for "Forgot Password" and "Sign Up" */
+.extra-links {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.extra-links a {
+  color: #0052D4;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+.extra-links span {
+  color: #aaa;
+}

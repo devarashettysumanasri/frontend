@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.bms-header {
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Top Bar Styling --- */
+.header-top-bar {
+    background-color: #333545; /* Dark grey from BMS */
+    padding: 0 1rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.logo-img {
+    height: 28px;
+}
+
+.logo-text {
+    position: absolute;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Allows clicks to go through to the link */
+}
+
+/* --- Search Bar --- */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.search-input {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.6rem 1rem 0.6rem 2.5rem; /* Left padding for icon */
+    width: 550px; /* Wide search bar */
+    font-size: 0.9rem;
+}
+.search-input:focus {
+    outline: none;
+    border-color: #F84464;
+}
+
+/* --- Header Right Side --- */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.location-selector {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.location-selector:hover {
+    color: white;
+}
+
+.signin-button {
+    background-color: #F84464; /* BMS Red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* --- Navigation Bar Styling --- */
+.header-nav-bar {
+    background-color: #222539; /* Darker blue/grey from BMS */
+    padding: 0 1rem;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link.secondary {
+    font-size: 0.8rem;
+    color: #999;
+}
+.nav-link.secondary:hover {
+    color: #ccc;
+}
